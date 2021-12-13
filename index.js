@@ -82,7 +82,18 @@ var app = new Vue({
       })
 
     },
+  },
+
+  mounted() {
+    var url = "http://apps.forcei.co.kr:19003/api/get_last_lotto_numbers"
+    this.get_data(url, "", (data) => {
+      this.lotto_number_list = data;
+      console.log(100, this.lotto_number_list);
+
+      this.color_list[1];
+    });
   }
+
 });
 
 export default app;

@@ -46,6 +46,12 @@
             <div class = "form-check form switch">
               <v-checkbox type="checkbox" v-model="auto" label="자동" color="indigo" @change="button_number"></v-checkbox>
             </div> -->
+            <div>
+              <v-avatar v-for ="(lotto_no,index) in lotto_number_list" :color="color_list[index]" size="56" >
+                  {{lotto_no}}
+              </v-avatar>
+
+            </div>
 
             <div>
               <hr>
